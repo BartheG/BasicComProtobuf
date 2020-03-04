@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb;
+
+message Element {
+	int64 _z = 1;
+	repeated string _compo = 2;
+}
+
+message Map {
+	int64 _x = 1;
+	int64 _y = 2;
+	repeated Element _map = 3;
+}
